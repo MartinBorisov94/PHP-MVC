@@ -34,7 +34,8 @@ class QuestionsModel extends BaseModel {
         $statement = self::$db->prepare("
          SELECT answers.Username, answers.DateTime, answers.Answer
          FROM answers
-         WHERE QuestionId= ?
+         WHERE QuestionId = ?
+         ORDER BY answers.DateTime ASC
        ");
         $statement->bind_param("i", $id);
         $statement->execute();

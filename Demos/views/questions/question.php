@@ -1,6 +1,6 @@
 <div>
     <legend><?php echo(htmlentities($this->question['Title']))?></legend>
-    <div class="panel panel-primary">
+    <div class="panel panel-warning">
         <div class="panel-heading">
             Username:<strong><?php echo(htmlentities($this->question['Username']))?></strong>
             <div class="pull-right"> <?php echo($this->question['DateTime'])?></div>

@@ -19,14 +19,13 @@ class AccountModel extends BaseModel{
     }
 
     public function login($username, $password){
-        $statement = self::$db->prepare("SELECT Id, UserName, Password From Users WHERE UserName = ?");
+        $statement = self::$db->prepare("SELECT Id, UserName, Password, IsAdmin From Users WHERE UserName = ?");
         $statement->bind_param("s", $username);
         $statement->execute();
         $result = $statement->get_result()->fetch_assoc();
 
         if(password_verify($password, $result['Password'])){
             return true;
-
         }
         return false;
     }

@@ -8,7 +8,7 @@ abstract class BaseController {
     protected $isPost = false;
     protected $user;
     protected $isLoggedIn = false;
-
+    protected $isAdmin = false;
 
 
 

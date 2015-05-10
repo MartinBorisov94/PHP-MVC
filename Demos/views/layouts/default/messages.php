@@ -5,7 +5,7 @@ renderMessages('errorMessages', 'error-messages');
 
 function renderMessages($messagesKey, $cssClass) {
     if (isset($_SESSION[$messagesKey]) && count($_SESSION[$messagesKey]) > 0) {
-        echo '<ul class="' . $cssClass . '">';
+        echo '<ul class=text-primary>';
         foreach ($_SESSION[$messagesKey] as $msg) {
             echo "<li>" . htmlspecialchars($msg) . '</li>';
         }

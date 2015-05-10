@@ -56,6 +56,9 @@ class AccountController extends BaseController{
     }
 
     public function login(){
+        if($this->isLoggedIn){
+            $this->redirect('demos');
+        }
         if($this->isPost){
             $username = $_POST['username'];
             $password = $_POST['password'];
