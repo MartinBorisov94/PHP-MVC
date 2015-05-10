@@ -10,6 +10,8 @@ abstract class BaseController {
     protected $isLoggedIn = false;
 
 
+
+
     public function __construct($controller) {
         $this->controller = $controller;
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -20,6 +22,8 @@ abstract class BaseController {
         }
 
         $this->onInit();
+
+        date_default_timezone_set('europe/sofia');
     }
 
     public function __get($name) {

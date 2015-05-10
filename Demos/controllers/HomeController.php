@@ -15,4 +15,5 @@ class HomeController extends BaseController {
         $this->renderView(__FUNCTION__);
     }
 
+
 }

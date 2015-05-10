@@ -6,25 +6,25 @@
             <div class="form-group">
                 <label for="username" class="col-lg-2 control-label">User Name</label>
                 <div class="col-lg-10">
-                    <input class="form-control" id="username" name="username" placeholder="User Name" type="text">
+                    <input class="form-control" id="username" name="username" placeholder="User Name" type="text" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                 <div class="col-lg-10">
-                    <input class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" type="text">
+                    <input class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" type="text" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="password" class="col-lg-2 control-label">Password</label>
                 <div class="col-lg-10">
-                    <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+                    <input class="form-control" id="password" name="password" placeholder="Password" type="password" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="confirmPassword" class="col-lg-2 control-label">Confirm Password</label>
                 <div class="col-lg-10">
-                    <input class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" type="password">
+                    <input class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" type="password" required>
                 </div>
             </div>
             <div class="form-group">
