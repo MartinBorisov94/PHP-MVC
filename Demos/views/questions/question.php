@@ -17,11 +17,11 @@
     <?php
     foreach($this->answers as $answer): ?>
         <div class="panel panel-primary">
-            <div class="panel-heading">Username: <strong> <?php echo($answer[0])?></strong>
+            <div class="panel-heading">Username: <strong> <?php echo(htmlentities($answer[0]))?></strong>
                 <div class="pull-right"> <?php echo($answer[1])?></div></div>
             <div class="panel-body">
                 <p>
-                    <?php echo($answer[2])?>
+                    <?php echo((htmlentities($answer[2])))?>
                 </p>
             </div>
         </div>
